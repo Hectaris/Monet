@@ -1,0 +1,7 @@
+.background{
+    background: linear-gradient(45deg, #595cff, #334DB3);
+    animation: gradient 30s ease infinite;
+    background-size: 400% 400%;
+    justify-content: center;
+    transition: all 0.5s;
+}
