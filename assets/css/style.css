@@ -1,6 +1,6 @@
-.background{
-    background: linear-gradient(45deg, #595cff, #334DB3);
-    animation: gradient 30s ease infinite;
+.background {
+    background: linear-gradient(180deg, #F8F8F8 24.27%, rgba(224, 239, 243, 0.1) 37.87%, rgba(157, 192, 203, 0.1) 55.59%, rgba(252, 210, 159, 0.1) 70.39%, rgba(227, 175, 112, 0.1) 100%);
+    animation: gradient 60s ease infinite;
     background-size: 400% 400%;
     justify-content: center;
     transition: all 0.5s;
