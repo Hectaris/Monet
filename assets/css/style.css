@@ -38,6 +38,12 @@
     padding: 3vh 3vw 3vh 0;
 }
 
+<<<<<<< HEAD
 .landingCover img{
     height: 80vh;
 }
+=======
+.landingCover{
+    height: 85vh;
+}
+>>>>>>> c7fbe6d5387217bc7f8dbc51f91177a62ed4ac1d
