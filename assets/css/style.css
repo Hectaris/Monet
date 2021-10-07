@@ -68,30 +68,29 @@
     flex-direction: column;
     text-align: right;
 }
-
 .footerDisplay {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    flex-direction: row;
+    align-items: center;
+    padding: 3vh 0;
 }
 
-.footerImage1 {
-    width: 15vh;
-    margin-top: -15%;
-    padding-right: 20px;
+.footerImage1{
+    height: 4vh;
 }
 
-.footerImage2 {
+.footerLine {
     height : 0.2vh;
-    width : 7vw;
+    width : 2vw;
     background-color : black;
-    margin: 3vh 0;
-    margin-top: 3%;
+    margin: 0 1.5vh;
 }
 
-.footerImage3 {
-    width: 10vh;
-    margin-left: 20px;
+
+.footerImage2{
+    height: 4vh;
+    padding-right: 52px;
 }
 
 
@@ -107,3 +106,9 @@
     text-align: center;
     padding-top: 1vh;
 }
+
+.tableauImage{
+    box-shadow: 0px 6px 6px #00000044;
+}
+
+
