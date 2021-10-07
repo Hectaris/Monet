@@ -1,7 +1,7 @@
 .mainTitle {
     display: flex;
     justify-content: center;
-    margin: 1.5vh 0;
+    margin: 2.5vh 0;
 }
 
 .navbar {
@@ -16,10 +16,14 @@
     margin: 0 20vw;
 }
 
-.navLine {
+.navLineZone {
     display: flex;
     justify-content: center;
+}
+
+.navLine {
     height : 0.2vh;
-    width : 70vw;
+    width : 62vw;
     background-color : black;
+    margin: 3vh 0;
 }
