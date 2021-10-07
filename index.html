@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="./assets/css/nav.css" class="css">
     <link rel="stylesheet" href="./assets/css/reset.css" class="css">
     <link rel="stylesheet" href="./assets/css/filtre.css" class="css">
+    <script src="./assets/js/capture.js"></script>
+    <script src="./assets/js/filter.js"></script>
     <title>Impressions - Monet</title>
 </head>
 
 <body class="background">
+    <!-- Nav - Vincent s'en occupe -->
     <Section class="nav">
         <h1 class="mainTitle text-focus-in">Impressions</h1>
         <div class="navbar">
@@ -37,6 +40,7 @@
 
         </div>
     </Section>
+    <!-- Landing page - Adrien s'en occupe -->
     <section class="landing flex">
         <div class="landingTextZone flex">
             <h2 class="landingTitle text-focus-in">Monet,</h2>
@@ -158,6 +162,43 @@
             </div>
         </section>
     </main>
+    <!-- slider Filtres - laissez à Adrien SVP -->
+    <section class="sliderFiltre">
+        <div class="c">
+
+            <input type="radio" name="a" id="cr-1" checked>
+            <label for="cr-1" style="--hue: 0"></label>
+            <div class="ci flex" style="--z: 4">
+                <div class="startFiltre">
+                    <video id="video" class="videoFiltre flex"></video>
+                </div>
+                <div class="selectionFiltre">
+                    <button id="startbutton">Take photo</button>
+                    <input type="range" id="jauge" name="jauge" min="0" max="100" value="90" step="10">
+                    <button id="idinvertbutton"> Gaussian Flou </button>
+                </div>
+                <div class="resultFiltre"><canvas id="mycanvas"></canvas>
+                    <img id="photo" class="videoFiltre flex" alt="The screen capture will appear in this box.">
+                </div>
+            </div>
+
+            <input type="radio" name="a" id="cr-2">
+            <label for="cr-2" style="--hue: 82"></label>
+            <div class="ci" style="--z: 3">
+            </div>
+
+            <input type="radio" name="a" id="cr-3">
+            <label for="cr-3" style="--hue: 40"></label>
+            <div class="ci" style="--z: 2">
+            </div>
+
+            <input type="radio" name="a" id="cr-4">
+            <label for="cr-4" style="--hue: 210"></label>
+            <div class="ci" style="--z: 1">
+            </div>
+
+        </div>
+    </section>
     <footer class="footerDisplay">
         <div class="footerBox">
             <img src="" alt="" class="footerImage">
