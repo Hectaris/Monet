@@ -12,7 +12,7 @@ H2 {
     font-family: Allura, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 15vh;
+    font-size: 22vh;
 }
 
 H3 {
@@ -26,12 +26,14 @@ H4 {
     font-family: Overpass, sans-serif;
     font-style: normal;
     font-weight: 200;
+    font-size: 6vh;
 }
 
 H5 {
     font-family: Overpass, sans-serif;
     font-style: italic;
-    font-weight: 200;
+    font-weight: 100;
+    font-size: 4vh;
 }
 
 H6 {

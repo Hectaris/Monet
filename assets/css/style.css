@@ -5,20 +5,34 @@
     justify-content: center;
     transition: all 0.5s;
 }
-.flex{
+
+.flex {
     display: flex;
 }
 
 /* Landing section */
 
-.landing{
+.landing {
     height: 85vh;
-    background-color: blue;
     margin: 0 5vw;
 }
 
-.landingTextZone{
-    display:flex;
+.landingTextZone {
+    display: flex;
     flex-direction: column;
     text-align: left;
+    justify-content: center;
+}
+
+.landingTitle {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1.5vh 0;
+}
+
+.landingSubTitle{
+    padding: 1.5vh 0;
+}
+.landingText{
+    padding: 1.5vh 3vw 1.5vh 0;
 }
