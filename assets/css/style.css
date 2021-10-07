@@ -48,6 +48,7 @@
 
 .tableauZone {
     justify-content: center;
+    padding-bottom: 12vh;
 }
 
 .tableauDisplay img {
@@ -59,7 +60,7 @@
 }
 
 
-.tableauExplication {
+.tableauExplicationGauche {
     padding-left: 8vw;
     display: flex;
     justify-content: center;
@@ -91,3 +92,10 @@
     margin-left: 20px;
 }
 
+
+.tableauExplicationDroite{
+    padding-right: 8vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
