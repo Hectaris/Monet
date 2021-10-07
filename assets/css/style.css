@@ -51,22 +51,18 @@
     height: 85vh;
 }
 
-.tableauSuperTitre {
-    font-size: 35px;
-    text-align: right;
-}
-
-.tableauExplicationText {
-    margin-top: 3vh;
-    font-size: 14px;
-}
-
 .tableauDisplay img {
-    width: 336px;
-    height: 246px;
+    height: 42vh;
 }
 
 .landingCover img{
     height: 80vh;
 }
 
+
+.tableauExplication {
+    padding-left: 8vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
