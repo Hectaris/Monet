@@ -36,3 +36,11 @@
 .landingText{
     padding: 3vh 3vw 3vh 0;
 }
+
+.tableaux {
+    margin : 10vh 10vw;
+}
+
+.tableauZone {
+    justify-content: center;
+}
