@@ -5,3 +5,20 @@
     justify-content: center;
     transition: all 0.5s;
 }
+.flex{
+    display: flex;
+}
+
+/* Landing section */
+
+.landing{
+    height: 85vh;
+    background-color: blue;
+    margin: 0 5vw;
+}
+
+.landingTextZone{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+}
