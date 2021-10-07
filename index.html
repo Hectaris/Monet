@@ -38,9 +38,9 @@
                     </div>
                 </a>
                 <a href="#" class="navbarLink">
-                <div class="navbarTextZone hover-underline-animation">
-                    <h3 class="navbarText">LONDON</h3>
-                </div>
+                    <div class="navbarTextZone hover-underline-animation">
+                        <h3 class="navbarText">LONDON</h3>
+                    </div>
                 </a>
             </div>
             <div class="navLineZone">
@@ -77,7 +77,8 @@
                     <h2 class="tableauSuperTitre">Periode Britannique</h2>
                 </div>
                 <div class="tableauExplicationText">
-                    <p class="tableauExplicationText">Monet peint cette toile en 1870, après avoir fui la guerre franco-prussienne. En pleine recherche
+                    <p class="tableauExplicationText">Monet peint cette toile en 1870, après avoir fui la guerre
+                        franco-prussienne. En pleine recherche
                         de nouveaux bâtiments à immortaliser, il est
                         fasciné par la brume londonienne, et l’ambiance paisible qui règne sur la Tamise. Il peint alors
                         cette vue du palais de Westminster à peine
@@ -175,33 +176,50 @@
     <section class="sliderFiltre">
         <div class="c">
 
-            <input type="radio" name="a" id="cr-1" checked>
+            <input type="radio" name="a" id="cr-1" checked class="inputFiltre">
             <label for="cr-1" style="--hue: 0"></label>
             <div class="ci flex" style="--z: 4">
                 <div class="startFiltre">
                     <video id="video" class="videoFiltre flex"></video>
                 </div>
-                <div class="selectionFiltre">
+                <div class="selectionFiltre flex">
+                    <h3>Flou Gaussien</h3><br><br><br>
+                    <div class="selectorFiltre">
+                        <div>
+                            <input type="radio" id="3x3" name="selector" value="check" checked>
+                            <label for="Trois" class="selector">3x3</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="5x5" name="selector" value="check">
+                            <label for="Cinq" class="selector">5x5</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="9x9" name="selector" value="check">
+                            <label for="Neuf" class="selector">9x9</label>
+                        </div>
+                    </div>
+                    <p>Intensité du filtre</p>
+                    <input class="gaussPad" type="range" id="jauge" name="jauge" min="0" max="100" value="50" step="10">
                     <button id="startbutton">Take photo</button>
-                    <input type="range" id="jauge" name="jauge" min="0" max="100" value="90" step="10">
-                    <button id="idinvertbutton"> Gaussian Flou </button>
+                    <button class="gaussPad" id="idinvertbutton">Appliquer le filtre </button>
                 </div>
-                <div class="resultFiltre"><canvas id="mycanvas"></canvas>
-                    <img id="photo" class="videoFiltre flex" alt="The screen capture will appear in this box.">
+                <div class="resultFiltre"><canvas id="mycanvas" class="resultFiltreImg flex"></canvas>
+                    <img id="photo" class="resultFiltreImg flex" alt="The screen capture will appear in this box.">
                 </div>
             </div>
 
-            <input type="radio" name="a" id="cr-2">
+            <input type="radio" name="a" id="cr-2" class="inputFiltre">
             <label for="cr-2" style="--hue: 82"></label>
             <div class="ci" style="--z: 3">
             </div>
 
-            <input type="radio" name="a" id="cr-3">
+            <input type="radio" name="a" id="cr-3" class="inputFiltre">
             <label for="cr-3" style="--hue: 40"></label>
             <div class="ci" style="--z: 2">
             </div>
 
-            <input type="radio" name="a" id="cr-4">
+            <input type="radio" name="a" id="cr-4" class="inputFiltre">
             <label for="cr-4" style="--hue: 210"></label>
             <div class="ci" style="--z: 1">
             </div>
