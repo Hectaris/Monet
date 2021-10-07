@@ -108,8 +108,10 @@
     z-index: -10;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.selector label{
-    background: transparent !important;
+
+.selector {
+    background: none !important;
+    box-shadow: none !important;
 }
 
 label {

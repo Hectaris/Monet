@@ -182,26 +182,26 @@
                     <video id="video" class="videoFiltre flex"></video>
                 </div>
                 <div class="selectionFiltre flex">
-                    <h3>Flou Gaussien</h3><br><br><br>
+                    <h3>Flou Gaussien</h3><br>
                     <div class="selectorFiltre">
                         <div>
                             <input type="radio" id="3x3" name="selector" value="check" checked>
-                            <label for="Trois" class="selector">3x3</label>
+                            <label for="3x3" class="selector">3x3</label>
                         </div>
                         <div>
                             <input type="radio" id="5x5" name="selector" value="check">
-                            <label for="Cinq" class="selector">5x5</label>
+                            <label for="5x5" class="selector">5x5</label>
                         </div>
 
                         <div>
                             <input type="radio" id="9x9" name="selector" value="check">
-                            <label for="Neuf" class="selector">9x9</label>
+                            <label for="9x9" class="selector">9x9</label>
                         </div>
                     </div>
                     <p>Intensité du filtre</p>
-                    <input class="gaussPad" type="range" id="jauge" name="jauge" min="0" max="100" value="50" step="10">
+                    <input class="" type="range" id="jauge" name="jauge" min="0" max="100" value="50" step="10">
                     <button id="startbutton">Take photo</button>
-                    <button class="gaussPad" id="idinvertbutton">Appliquer le filtre </button>
+                    <button class="" id="idinvertbutton">Appliquer le filtre </button>
                 </div>
                 <div class="resultFiltre"><canvas id="mycanvas" class="resultFiltreImg flex"></canvas>
                     <img id="photo" class="resultFiltreImg flex" alt="The screen capture will appear in this box.">
