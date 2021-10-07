@@ -38,11 +38,9 @@
     padding: 3vh 3vw 3vh 0;
 }
 
-<<<<<<< HEAD
 .landingCover img{
     height: 80vh;
 }
-=======
 
 .tableaux {
     margin : 10vh 10vw;
@@ -52,27 +50,18 @@
     justify-content: center;
 }
 
-.landingCover{
-    height: 85vh;
-}
-
-.tableauSuperTitre {
-    font-size: 35px;
-    text-align: right;
-}
-
-.tableauExplicationText {
-    margin-top: 3vh;
-    font-size: 14px;
-}
-
 .tableauDisplay img {
-    width: 336px;
-    height: 246px;
+    height: 42vh;
 }
 
 .landingCover img{
     height: 80vh;
 }
 
->>>>>>> a341ef6b64c8b77957a6fa168abfc2c9fe40a53f
+
+.tableauExplication {
+    padding-left: 8vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

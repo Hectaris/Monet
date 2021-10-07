@@ -46,5 +46,20 @@ p {
     font-family: Overpass, sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 3vh;
+    font-size: 2.5vh;
+}
+
+.tableauSousTitre {
+    font-family: Allura, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vh;
+}
+
+.tableauSuperTitre{
+    font-family: Allura, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vh;
+    padding-bottom: 2vh;
 }
