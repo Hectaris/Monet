@@ -45,6 +45,7 @@
 
 .tableauZone {
     justify-content: center;
+    padding-bottom: 12vh;
 }
 
 .landingCover{
@@ -60,9 +61,28 @@
 }
 
 
-.tableauExplication {
+.tableauExplicationGauche {
     padding-left: 8vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: right;
+}
+
+.tableauExplicationDroite {
+    padding-right: 8vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tableauCadreTitre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.tableauTitreBox{
+    padding-top : 1vh;
 }
