@@ -28,6 +28,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding: 1vh 0;
+    text-shadow: 0px 4px 4px #00000044;
 }
 
 .landingSubTitle{
@@ -43,4 +44,22 @@
 
 .tableauZone {
     justify-content: center;
+}
+
+.landingCover{
+    height: 85vh;
+}
+
+.tableauSuperTitre {
+    font-size: 35px;
+}
+
+.tableauExplicationText {
+    margin-top: 3vh;
+    font-size: 14px;
+}
+
+.tableauDisplay img {
+    width: 336px;
+    height: 246px;
 }
