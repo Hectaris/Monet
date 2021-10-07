@@ -87,3 +87,6 @@
 	        animation: text-focus-in 1.5s both;
 }
 
+html {
+  scroll-behavior: smooth;
+}

@@ -13,7 +13,7 @@
 /* Landing section */
 
 .landing {
-    height: 85vh;
+    height: 80vh;
     margin: 0 5vw 0 10vw;
 }
 
@@ -48,7 +48,8 @@
 
 .tableauZone {
     justify-content: center;
-    padding-bottom: 12vh;
+    padding-bottom: 6vh;
+    padding-top: 6vh;
 }
 
 .tableauDisplay img {
