@@ -175,7 +175,7 @@
     <section class="sliderFiltre">
         <div class="c">
 
-            <input type="radio" name="a" id="cr-1" checked class="inputFiltre">
+            <input type="radio" name="a" id="cr-1" class="inputFiltre" checked>
             <label for="cr-1" style="--hue: 0"></label>
             <div class="ci flex" style="--z: 4">
                 <div class="startFiltre">
@@ -183,34 +183,68 @@
                 </div>
                 <div class="selectionFiltre flex">
                     <h3>Flou Gaussien</h3><br>
+                    <p>Mode de traitement</p>
                     <div class="selectorFiltre">
                         <div>
-                            <input type="radio" id="3x3" name="selector" value="check" checked>
+                            <input class="selector radio__control" type="radio" id="3x3" name="selector" value="check"
+                                checked>
                             <label for="3x3" class="selector">3x3</label>
                         </div>
                         <div>
-                            <input type="radio" id="5x5" name="selector" value="check">
+                            <input class="selector radio__control" type="radio" id="5x5" name="selector" value="check">
                             <label for="5x5" class="selector">5x5</label>
                         </div>
 
-                        <div>
-                            <input type="radio" id="9x9" name="selector" value="check">
-                            <label for="9x9" class="selector">9x9</label>
+                        <div class="gaussPad">
+                            <input class="selector radio__control" type="radio" id="11x11" name="selector"
+                                value="check">
+                            <label for="11x11" class="selector">11x11</label>
                         </div>
                     </div>
                     <p>Intensité du filtre</p>
-                    <input class="" type="range" id="jauge" name="jauge" min="0" max="100" value="50" step="10">
-                    <button id="startbutton">Take photo</button>
-                    <button class="" id="idinvertbutton">Appliquer le filtre </button>
+                    <input class="gaussPad" type="range" id="jauge" name="jauge" min="0" max="100" value="50" step="10">
+                    <button class="resetButton btn gaussPad" id="startbutton">Prendre une photo</button>
+                    <button class="resetButton btn gaussPad2" id="idinvertbutton">Appliquer le filtre </button>
                 </div>
                 <div class="resultFiltre"><canvas id="mycanvas" class="resultFiltreImg flex"></canvas>
                     <img id="photo" class="resultFiltreImg flex" alt="The screen capture will appear in this box.">
                 </div>
             </div>
 
-            <input type="radio" name="a" id="cr-2" class="inputFiltre">
+            <input type="radio" name="a" id="cr-2" checked>
             <label for="cr-2" style="--hue: 82"></label>
-            <div class="ci" style="--z: 3">
+            <div class="ci flex" style="--z: 3">
+                <div class="startFiltre">
+                    <img src="/ressources/img/le_grand_canal.png" id="video" class="videoFiltre flex"></video>
+                </div>
+                <div class="selectionFiltre flex">
+                    <h3>Flou Gaussien</h3><br>
+                    <p>Mode de traitement</p>
+                    <div class="selectorFiltre">
+                        <div>
+                            <input class="selector radio__control" type="radio" id="3x3" name="selector" value="check"
+                                checked>
+                            <label for="3x3" class="selector">3x3</label>
+                        </div>
+                        <div>
+                            <input class="selector radio__control" type="radio" id="5x5" name="selector" value="check">
+                            <label for="5x5" class="selector">5x5</label>
+                        </div>
+
+                        <div class="gaussPad">
+                            <input class="selector radio__control" type="radio" id="11x11" name="selector"
+                                value="check">
+                            <label for="11x11" class="selector">11x11</label>
+                        </div>
+                    </div>
+                    <p>Intensité du filtre</p>
+                    <input class="gaussPad" type="range" id="jauge" name="jauge" min="0" max="100" value="50" step="10">
+                    <button class="resetButton btn gaussPad" id="startbutton">Prendre une photo</button>
+                    <button class="resetButton btn gaussPad2" id="idinvertbutton">Appliquer le filtre </button>
+                </div>
+                <div class="resultFiltre"><canvas id="mycanvas" class="resultFiltreImg flex"></canvas>
+                    <img id="photo" class="resultFiltreImg flex" alt="The screen capture will appear in this box.">
+                </div>
             </div>
 
             <input type="radio" name="a" id="cr-3" class="inputFiltre">
@@ -227,16 +261,16 @@
     </section>
     <footer class="footerDisplay">
         <a href="https://www.mmibordeaux.com/">
-        <div class="footerBox">
-            <img src="./ressources/img/mmi.png" alt="" class="footerImage1">
-        </div>
+            <div class="footerBox">
+                <img src="./ressources/img/mmi.png" alt="" class="footerImage1">
+            </div>
         </a>
         <div class="footerImage2">
         </div>
         <a href="https://jauneprod.netlify.app/">
-        <div class="footerBox">
-            <img src="./ressources/img/jp.png" alt="" class="footerImage3">
-        </div>
+            <div class="footerBox">
+                <img src="./ressources/img/jp.png" alt="" class="footerImage3">
+            </div>
         </a>
     </footer>
 </body>
