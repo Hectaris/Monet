@@ -14,7 +14,7 @@
 
 .landing {
     height: 85vh;
-    margin: 0 5vw;
+    margin: 0 5vw 0 10vw;
 }
 
 .landingTextZone {
@@ -27,12 +27,12 @@
 .landingTitle {
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 1.5vh 0;
+    padding: 1vh 0;
 }
 
 .landingSubTitle{
     padding: 1.5vh 0;
 }
 .landingText{
-    padding: 1.5vh 3vw 1.5vh 0;
+    padding: 3vh 3vw 3vh 0;
 }
