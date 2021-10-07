@@ -65,6 +65,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: right;
 }
 
 .footerDisplay {
@@ -98,4 +99,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: left;
+}
+
+.tableauSousTitre{
+    text-align: center;
+    padding-top: 1vh;
 }

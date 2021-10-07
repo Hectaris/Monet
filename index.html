@@ -21,23 +21,23 @@
         <h1 class="mainTitle text-focus-in">Impressions</h1>
         <div class="navbar">
             <div class="navbarElement flex">
-                <a href="#" class="navbarLink">
+                <a href="#WESTMINSTER" class="navbarLink">
                     <div class="navbarTextZone hover-underline-animation">
                         <h3 class="navbarText">WESTMINSTER</h3>
                     </div>
                 </a>
-                <a href="#" class="navbarLink">
+                <a href="#VENICE" class="navbarLink">
                     <div class="navbarTextZone hover-underline-animation">
                         <h3 class="navbarText">VENICE</h3>
                     </div>
                 </a>
 
-                <a href="#" class="navbarLink">
+                <a href="#LEHAVRE" class="navbarLink">
                     <div class="navbarTextZone hover-underline-animation">
                         <h3 class="navbarText">LE HAVRE</h3>
                     </div>
                 </a>
-                <a href="#" class="navbarLink">
+                <a href="#LONDON" class="navbarLink">
                     <div class="navbarTextZone hover-underline-animation">
                         <h3 class="navbarText">LONDON</h3>
                     </div>
@@ -62,7 +62,7 @@
         </div>
     </section>
     <main class="tableaux">
-        <section class="tableauZone flex">
+        <section class="tableauZone flex" id="WESTMINSTER">
             <div class="tableauCadreTitre">
                 <div class="tableauDisplay">
                     <img src="./ressources/img/the_thames_of_westminster.png"
@@ -90,7 +90,7 @@
                 </div>
             </div>
         </section>
-        <section class="tableauZone flex">
+        <section class="tableauZone flex" id="VENICE">
             <div class="tableauExplicationDroite">
                 <div class="tableauExplicationTitre">
                     <h2 class="tableauSuperTitre">Balades Vénitiennes</h2>
@@ -118,7 +118,7 @@
                 </div>
             </div>
         </section>
-        <section class="tableauZone flex">
+        <section class="tableauZone flex" id="LEHAVRE">
             <div class="tableauCadreTitre">
                 <div class="tableauDisplay">
                     <img src="./ressources/img/impression_soleil_levant.png"
@@ -145,7 +145,7 @@
                 </div>
             </div>
         </section>
-        <section class="tableauZone flex">
+        <section class="tableauZone flex" id="LONDON">
             <div class="tableauExplicationDroite">
                 <div class="tableauExplicationTitre">
                     <h2 class="tableauSuperTitre">Éloge de la lumière</h2>
@@ -175,33 +175,50 @@
     <section class="sliderFiltre">
         <div class="c">
 
-            <input type="radio" name="a" id="cr-1" checked>
+            <input type="radio" name="a" id="cr-1" checked class="inputFiltre">
             <label for="cr-1" style="--hue: 0"></label>
             <div class="ci flex" style="--z: 4">
                 <div class="startFiltre">
                     <video id="video" class="videoFiltre flex"></video>
                 </div>
-                <div class="selectionFiltre">
+                <div class="selectionFiltre flex">
+                    <h3>Flou Gaussien</h3><br>
+                    <div class="selectorFiltre">
+                        <div>
+                            <input type="radio" id="3x3" name="selector" value="check" checked>
+                            <label for="3x3" class="selector">3x3</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="5x5" name="selector" value="check">
+                            <label for="5x5" class="selector">5x5</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="9x9" name="selector" value="check">
+                            <label for="9x9" class="selector">9x9</label>
+                        </div>
+                    </div>
+                    <p>Intensité du filtre</p>
+                    <input class="" type="range" id="jauge" name="jauge" min="0" max="100" value="50" step="10">
                     <button id="startbutton">Take photo</button>
-                    <input type="range" id="jauge" name="jauge" min="0" max="100" value="90" step="10">
-                    <button id="idinvertbutton"> Gaussian Flou </button>
+                    <button class="" id="idinvertbutton">Appliquer le filtre </button>
                 </div>
-                <div class="resultFiltre"><canvas id="mycanvas"></canvas>
-                    <img id="photo" class="videoFiltre flex" alt="The screen capture will appear in this box.">
+                <div class="resultFiltre"><canvas id="mycanvas" class="resultFiltreImg flex"></canvas>
+                    <img id="photo" class="resultFiltreImg flex" alt="The screen capture will appear in this box.">
                 </div>
             </div>
 
-            <input type="radio" name="a" id="cr-2">
+            <input type="radio" name="a" id="cr-2" class="inputFiltre">
             <label for="cr-2" style="--hue: 82"></label>
             <div class="ci" style="--z: 3">
             </div>
 
-            <input type="radio" name="a" id="cr-3">
+            <input type="radio" name="a" id="cr-3" class="inputFiltre">
             <label for="cr-3" style="--hue: 40"></label>
             <div class="ci" style="--z: 2">
             </div>
 
-            <input type="radio" name="a" id="cr-4">
+            <input type="radio" name="a" id="cr-4" class="inputFiltre">
             <label for="cr-4" style="--hue: 210"></label>
             <div class="ci" style="--z: 1">
             </div>
