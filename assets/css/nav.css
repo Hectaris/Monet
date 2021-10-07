@@ -1,9 +1,25 @@
 .mainTitle {
     display: flex;
     justify-content: center;
+    margin: 1.5vh 0;
 }
 
 .navbar {
     justify-content: center;
     text-align: center;
+}
+
+.navbarElement {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 20vw;
+}
+
+.navLine {
+    display: flex;
+    justify-content: center;
+    height : 0.2vh;
+    width : 70vw;
+    background-color : black;
 }
