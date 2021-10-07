@@ -37,3 +37,7 @@
 .landingText{
     padding: 3vh 3vw 3vh 0;
 }
+
+.landingCover{
+    height: 85vh;
+}
