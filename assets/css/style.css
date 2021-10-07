@@ -1,7 +1,7 @@
 .background {
-    background: linear-gradient(180deg, #F8F8F8 24.27%, rgba(224, 239, 243, 0.1) 37.87%, rgba(157, 192, 203, 0.1) 55.59%, rgba(252, 210, 159, 0.1) 70.39%, rgba(227, 175, 112, 0.1) 100%);
+    background: linear-gradient(180deg, #F8F8F8 24.27%, rgba(224, 239, 243, 0.5) 37.87%, rgba(157, 192, 203, 0.5) 55.59%, rgba(252, 210, 159, 0.5) 70.39%, rgba(227, 175, 112, 0.5) 100%);
     animation: gradient 60s ease infinite;
-    background-size: 400% 400%;
+    background-size: 200% 200%;
     justify-content: center;
     transition: all 0.5s;
 }
@@ -38,6 +38,7 @@
     padding: 3vh 3vw 3vh 0;
 }
 
+
 .tableaux {
     margin : 10vh 10vw;
 }
@@ -63,3 +64,8 @@
     width: 336px;
     height: 246px;
 }
+
+.landingCover img{
+    height: 80vh;
+}
+
