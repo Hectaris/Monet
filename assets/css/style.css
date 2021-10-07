@@ -1,5 +1,5 @@
 .background {
-    background: linear-gradient(180deg, #F8F8F8 24.27%, rgba(224, 239, 243, 0.5) 37.87%, rgba(157, 192, 203, 0.5) 55.59%, rgba(252, 210, 159, 0.5) 70.39%, rgba(227, 175, 112, 0.5) 100%);
+    background: linear-gradient(180deg, #F8F8F8 24.27%, rgba(224, 239, 243, 1) 37.87%, rgba(157, 192, 203, 1) 55.59%, rgba(252, 210, 159, 1) 70.39%, rgba(126, 103, 76, 1) 100%);
     animation: gradient 60s ease infinite;
     background-size: 200% 200%;
     justify-content: center;
@@ -38,6 +38,9 @@
     padding: 3vh 3vw 3vh 0;
 }
 
+.landingCover img{
+    height: 80vh;
+}
 
 .tableaux {
     margin : 10vh 10vw;
@@ -46,10 +49,6 @@
 .tableauZone {
     justify-content: center;
     padding-bottom: 12vh;
-}
-
-.landingCover{
-    height: 85vh;
 }
 
 .tableauDisplay img {
@@ -66,23 +65,12 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: right;
 }
 
-.tableauExplicationDroite {
+
+.tableauExplicationDroite{
     padding-right: 8vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-.tableauCadreTitre{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.tableauTitreBox{
-    padding-top : 1vh;
 }
