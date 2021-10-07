@@ -1,0 +1,9 @@
+.mainTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    justify-content: center;
+    text-align: center;
+}
