@@ -92,10 +92,12 @@ p {
     
     .tableauSousTitre {
         font-size: 1.5vh;
+        padding: 1vh 0;
     }
 
     .tableauSuperTitre{
         font-size: 4vh;
+        padding-bottom: 0;
     }
 
 }
