@@ -92,3 +92,13 @@ html {
   }
 
 
+  @media (max-width: 1250px) {
+    
+    .mainTitle {
+      margin: 1 0;
+    }
+
+    .navLineZone{
+      padding: 0 0;
+    }
+  }

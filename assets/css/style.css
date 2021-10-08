@@ -104,7 +104,6 @@
 
 .footerImage2{
     height: 4vh;
-    padding-right: 52px;
 }
 
 
@@ -127,9 +126,29 @@
     .landingTextZone{
         justify-content: center;
         text-align: center;
+        height: 40vh;
     }
 
     .landingSubTitle{
+        padding: 0;
+    }
+
+    .tableauZone{
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .tableauDisplay img{
+        height: 27.2vh;
+    }
+
+    .tableauExplicationDroite{
+        text-align: center;
+        padding: 0;
+    }
+
+    .tableauExplicationGauche{
+        text-align: center;
         padding: 0;
     }
 }
