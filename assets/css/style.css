@@ -106,3 +106,30 @@
     height: 4vh;
     padding-right: 52px;
 }
+
+
+@media (max-width: 1250px) {
+    .landingCover {
+        display: none;
+    }
+
+    .landing{
+    height: 50vh;
+    margin: 0 5vw 0 5vw;
+    text-align: center;
+    overflow: hidden;
+    }
+
+    .landingTitle{
+        height: 12.5vh;
+        padding: 0;
+    }
+    .landingTextZone{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .landingSubTitle{
+        padding: 0;
+    }
+}

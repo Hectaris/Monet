@@ -38,12 +38,6 @@ H5 {
     font-size: 4vh;
 }
 
-H6 {
-    font-family: Overpass, sans-serif;
-    font-style: 18px;
-    font-weight: normal;
-}
-
 p {
     font-family: Overpass, sans-serif;
     font-style: normal;
@@ -66,4 +60,42 @@ p {
     font-weight: normal;
     font-size: 5vh;
     padding-bottom: 3.5vh;
+}
+
+
+@media (max-width: 1250px) {
+
+    H3 {
+        font-size: 1.39vh;
+    }
+
+    H1 {
+        font-size: 6vh;
+    }
+
+    H2 {
+        font-size: 12vh;
+    }
+
+    H4{
+        font-size: 4vh;
+    }
+
+    H5{
+        font-size: 2vh;
+    }
+
+    p{
+        font-size: 1.7vh;
+        line-height: 2vh;
+    }
+    
+    .tableauSousTitre {
+        font-size: 1.5vh;
+    }
+
+    .tableauSuperTitre{
+        font-size: 4vh;
+    }
+
 }

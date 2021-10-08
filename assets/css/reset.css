@@ -46,3 +46,9 @@ table {
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
+
+@media (max-width: 1250px) {
+	*{
+		overflow-x: hidden;
+	}
+}
