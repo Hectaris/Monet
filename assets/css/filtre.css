@@ -6,6 +6,10 @@
     margin: 2vh 0;
 }
 
+.sliderFiltre p {
+    padding-bottom: 0;
+}
+
 .startFiltre {
     width: 30vw;
     height: 50vh;
@@ -38,6 +42,10 @@
 }
 
 .gaussPad {
+    margin-bottom: 2vh;
+}
+
+.gaussPad2 {
     margin-bottom: 5vh;
 }
 
@@ -53,6 +61,14 @@
     display: none;
 }
 
+.radio_control {
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 0.1em solid #B4D2E7;
+}
+
 /* Slider */
 
 .c {
@@ -62,7 +78,7 @@
     border-radius: 12px;
     padding: 20px;
     padding-bottom: 40px;
-    box-shadow: 0 8px 48px 2px hsla(10 6% 15% / .4);
+    box-shadow: 0 5px 5px 0px hsla(10 6% 15% / .4);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -114,6 +130,37 @@
     box-shadow: none !important;
 }
 
+.resetButton {
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+.btn {
+    border-color: black !important;
+    border: 10vw 5vh;
+    border-radius: 1vh !important;
+    font-family: overpass, sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+    padding: 1vh 1vw;
+}
+
+.hide {
+    opacity: 0;
+}
+
 label {
     width: 10%;
     height: 10px;
@@ -124,6 +171,7 @@ label {
     color: black;
     position: relative;
     z-index: 10;
+    font-family: overpass, sans-serif;
 }
 
 label:last-child {

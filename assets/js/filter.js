@@ -56,37 +56,88 @@
 			for (var i = 0; i < val; i++)
 				for (var y = 1; y < height - 1; y++) {
 					for (var x = 1; x < width - 1; x++) {
-						tr[x][y] = ((tr[x - 1][y - 1]) + ((tr[x][y - 1]) * 2) + (tr[x + 1][y - 1]) + ((tr[x - 1][y]) * 2) + ((tr[x][y]) * 5) + ((tr[x + 1][y]) * 2) + (tr[x - 1][y + 1]) + ((tr[x][y + 1]) * 2) + (tr[x + 1][y + 1])) / 17;
-						tg[x][y] = ((tg[x - 1][y - 1]) + ((tg[x][y - 1]) * 2) + (tg[x + 1][y - 1]) + ((tg[x - 1][y]) * 2) + ((tg[x][y]) * 5) + ((tg[x + 1][y]) * 2) + (tg[x - 1][y + 1]) + ((tg[x][y + 1]) * 2) + (tg[x + 1][y + 1])) / 17;
-						tb[x][y] = ((tb[x - 1][y - 1]) + ((tb[x][y - 1]) * 2) + (tb[x + 1][y - 1]) + ((tb[x - 1][y]) * 2) + ((tb[x][y]) * 5) + ((tb[x + 1][y]) * 2) + (tb[x - 1][y + 1]) + ((tb[x][y + 1]) * 2) + (tb[x + 1][y + 1])) / 17;
+						tr[x][y] = (((tr[x - 1][y - 1]) * 6) + ((tr[x][y - 1]) * 8) + ((tr[x + 1][y - 1]) * 6)
+							+ ((tr[x - 1][y]) * 8) + ((tr[x][y]) * 10) + ((tr[x + 1][y]) * 8)
+							+ ((tr[x - 1][y + 1]) * 6) + ((tr[x][y + 1]) * 8) + ((tr[x + 1][y + 1]) * 6)) / 66;
+						tg[x][y] = (((tg[x - 1][y - 1]) * 6) + ((tg[x][y - 1]) * 8) + ((tg[x + 1][y - 1]) * 6)
+							+ ((tg[x - 1][y]) * 8) + ((tg[x][y]) * 10) + ((tg[x + 1][y]) * 8) +
+							((tg[x - 1][y + 1]) * 6) + ((tg[x][y + 1]) * 8) + ((tg[x + 1][y + 1]) * 6)) / 66;
+						tb[x][y] = (((tb[x - 1][y - 1]) * 6) + ((tb[x][y - 1]) * 8) + ((tb[x + 1][y - 1]) * 6)
+							+ ((tb[x - 1][y]) * 8) + ((tb[x][y]) * 10) + ((tb[x + 1][y]) * 8)
+							+ ((tb[x - 1][y + 1]) * 6) + ((tb[x][y + 1]) * 8) + ((tb[x + 1][y + 1]) * 6)) / 66;
 					}
 				}
 		}
-			// RETOUR EN 1D POUR AFFICHER LES MODIFICATIONS
-			// 4 tab 2D (r,g,b,a) -> 1 tab 1D POUR METTRE A JOUR L'IMAGE
-			for (var y = 0; y < height; y++) {
-				for (var x = 0; x < width; x++) {
-					pix[x * 4 + y * (width * 4) + 0] = tr[x][y];
-					pix[x * 4 + y * (width * 4) + 1] = tg[x][y];
-					pix[x * 4 + y * (width * 4) + 2] = tb[x][y];
-					pix[x * 4 + y * (width * 4) + 3] = ta[x][y];
+		if (document.getElementById('5x5').checked) {
+			for (var i = 0; i < val; i++)
+				for (var y = 2; y < height - 2; y++) {
+					for (var x = 2; x < width - 2; x++) {
+						tr[x][y] = (((tr[x - 2][y - 2]) * 1) + ((tr[x - 1][y - 2]) * 2) + ((tr[x][y - 2]) * 3) + ((tr[x + 1][y - 2]) * 2) + ((tr[x + 2][y - 2]) * 1) +
+							((tr[x - 2][y - 1]) * 2) + ((tr[x + 2][y - 1]) * 2) + ((tr[x - 2][y]) * 3) + ((tr[x + 2][y]) * 3) + ((tr[x - 2][y + 1]) * 2) + ((tr[x + 2][y + 1]) * 2) +
+							((tr[x - 2][y + 2]) * 1) + ((tr[x - 1][y + 2]) * 2) + ((tr[x][y + 2]) * 3) + ((tr[x + 1][y + 2]) * 2) + ((tr[x + 2][y + 2]) * 1) +
+							((tr[x - 1][y - 1]) * 6) + ((tr[x][y - 1]) * 8) + ((tr[x + 1][y - 1]) * 6)
+							+ ((tr[x - 1][y]) * 8) + ((tr[x][y]) * 10) + ((tr[x + 1][y]) * 8)
+							+ ((tr[x - 1][y + 1]) * 6) + ((tr[x][y + 1]) * 8) + ((tr[x + 1][y + 1]) * 6)) / 98;
+
+
+						tg[x][y] = (((tg[x - 2][y - 2]) * 1) + ((tg[x - 1][y - 2]) * 2) + ((tg[x][y - 2]) * 3) + ((tg[x + 1][y - 2]) * 2) + ((tg[x + 2][y - 2]) * 1) +
+							((tg[x - 2][y - 1]) * 2) + ((tg[x + 2][y - 1]) * 2) + ((tg[x - 2][y]) * 3) + ((tg[x + 2][y]) * 3) + ((tg[x - 2][y + 1]) * 2) + ((tg[x + 2][y + 1]) * 2) +
+							((tg[x - 2][y + 2]) * 1) + ((tg[x - 1][y + 2]) * 2) + ((tg[x][y + 2]) * 3) + ((tg[x + 1][y + 2]) * 2) + ((tg[x + 2][y + 2]) * 1) +
+							((tg[x - 1][y - 1]) * 6) + ((tg[x][y - 1]) * 8) + ((tg[x + 1][y - 1]) * 6)
+							+ ((tg[x - 1][y]) * 8) + ((tg[x][y]) * 10) + ((tg[x + 1][y]) * 8)
+							+ ((tg[x - 1][y + 1]) * 6) + ((tg[x][y + 1]) * 8) + ((tg[x + 1][y + 1]) * 6)) / 98;
+
+
+						tb[x][y] = (((tb[x - 2][y - 2]) * 1) + ((tb[x - 1][y - 2]) * 2) + ((tb[x][y - 2]) * 3) + ((tb[x + 1][y - 2]) * 2) + ((tb[x + 2][y - 2]) * 1) +
+							((tb[x - 2][y - 1]) * 2) + ((tb[x + 2][y - 1]) * 2) + ((tb[x - 2][y]) * 3) + ((tb[x + 2][y]) * 3) + ((tb[x - 2][y + 1]) * 2) + ((tb[x + 2][y + 1]) * 2) +
+							((tb[x - 2][y + 2]) * 1) + ((tb[x - 1][y + 2]) * 2) + ((tb[x][y + 2]) * 3) + ((tb[x + 1][y + 2]) * 2) + ((tb[x + 2][y + 2]) * 1) +
+							((tb[x - 1][y - 1]) * 6) + ((tb[x][y - 1]) * 8) + ((tb[x + 1][y - 1]) * 6)
+							+ ((tb[x - 1][y]) * 8) + ((tb[x][y]) * 10) + ((tb[x + 1][y]) * 8)
+							+ ((tb[x - 1][y + 1]) * 6) + ((tb[x][y + 1]) * 8) + ((tb[x + 1][y + 1]) * 6)) / 98;
+					}
 				}
+		}
+		if (document.getElementById('11x11').checked) {
+			for (var i = 0; i < val; i++)
+				for (var y = 1; y < height - 1; y++) {
+					for (var x = 1; x < width - 1; x++) {
+						tr[x][y] = (((tr[x - 1][y - 1]) * 6) + ((tr[x][y - 1]) * 8) + ((tr[x + 1][y - 1]) * 6)
+							+ ((tr[x - 1][y]) * 8) + ((tr[x][y]) * 10) + ((tr[x + 1][y]) * 8)
+							+ ((tr[x - 1][y + 1]) * 6) + ((tr[x][y + 1]) * 8) + ((tr[x + 1][y + 1]) * 6)) / 66;
+						tg[x][y] = (((tg[x - 1][y - 1]) * 6) + ((tg[x][y - 1]) * 8) + ((tg[x + 1][y - 1]) * 6)
+							+ ((tg[x - 1][y]) * 8) + ((tg[x][y]) * 10) + ((tg[x + 1][y]) * 8) +
+							((tg[x - 1][y + 1]) * 6) + ((tg[x][y + 1]) * 8) + ((tg[x + 1][y + 1]) * 6)) / 66;
+						tb[x][y] = (((tb[x - 1][y - 1]) * 6) + ((tb[x][y - 1]) * 8) + ((tb[x + 1][y - 1]) * 6)
+							+ ((tb[x - 1][y]) * 8) + ((tb[x][y]) * 10) + ((tb[x + 1][y]) * 8)
+							+ ((tb[x - 1][y + 1]) * 6) + ((tb[x][y + 1]) * 8) + ((tb[x + 1][y + 1]) * 6)) / 66;
+					}
+				}
+		}
+		// RETOUR EN 1D POUR AFFICHER LES MODIFICATIONS
+		// 4 tab 2D (r,g,b,a) -> 1 tab 1D POUR METTRE A JOUR L'IMAGE
+		for (var y = 0; y < height; y++) {
+			for (var x = 0; x < width; x++) {
+				pix[x * 4 + y * (width * 4) + 0] = tr[x][y];
+				pix[x * 4 + y * (width * 4) + 1] = tg[x][y];
+				pix[x * 4 + y * (width * 4) + 2] = tb[x][y];
+				pix[x * 4 + y * (width * 4) + 3] = ta[x][y];
 			}
-
-			// Draw the ImageData at the given (x,y) coordinates.
-			context.putImageData(imgd, 0, 0);
-
-			var data = canvas.toDataURL('image/png');
-			photo.setAttribute('src', data);
 		}
 
+		// Draw the ImageData at the given (x,y) coordinates.
+		context.putImageData(imgd, 0, 0);
 
-		function afterload() {
-			vinvertbutton = document.getElementById('idinvertbutton');
+		var data = canvas.toDataURL('image/png');
+		photo.setAttribute('src', data);
+	}
 
-			// ICI je fais le lien entre ma fonction myInert() et l'évenement click du bouton innvert
-			vinvertbutton.addEventListener('click', function (ev) { myInvert(); }, false);
 
-		}
-		window.addEventListener('load', afterload, false);
-	}) ();
+	function afterload() {
+		vinvertbutton = document.getElementById('idinvertbutton');
+
+		// ICI je fais le lien entre ma fonction myInert() et l'évenement click du bouton innvert
+		vinvertbutton.addEventListener('click', function (ev) { myInvert(); }, false);
+
+	}
+	window.addEventListener('load', afterload, false);
+})();
