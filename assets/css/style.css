@@ -1,3 +1,5 @@
+
+/*Mise en place du dégradé de fond*/
 .background {
     background: linear-gradient(180deg, #F8F8F8 24.27%, rgba(224, 239, 243, 1) 37.87%, rgba(157, 192, 203, 1) 55.59%, rgba(252, 210, 159, 1) 70.39%, rgba(126, 103, 76, 1) 100%);
     animation: gradient 60s ease infinite;
@@ -11,7 +13,6 @@
 }
 
 /* Landing section */
-
 .landing {
     height: 80vh;
     margin: 0 5vw 0 10vw;
@@ -42,6 +43,7 @@
     height: 80vh;
 }
 
+/* Tableaux Section*/
 .tableaux {
     margin : 10vh 10vw;
 }
@@ -55,11 +57,6 @@
 .tableauDisplay img {
     height: 42vh;
 }
-
-.landingCover img{
-    height: 80vh;
-}
-
 
 .tableauExplicationGauche {
     padding-left: 8vw;
@@ -75,24 +72,6 @@
     align-items: center;
     padding: 3vh 0;
 }
-
-.footerImage1{
-    height: 4vh;
-}
-
-.footerLine {
-    height : 0.2vh;
-    width : 2vw;
-    background-color : black;
-    margin: 0 1.5vh;
-}
-
-
-.footerImage2{
-    height: 4vh;
-    padding-right: 52px;
-}
-
 
 .tableauExplicationDroite{
     padding-right: 8vw;
@@ -111,4 +90,19 @@
     box-shadow: 0px 6px 6px #00000044;
 }
 
+/* Footer Section*/
+.footerImage1{
+    height: 4vh;
+}
 
+.footerLine {
+    height : 0.2vh;
+    width : 2vw;
+    background-color : black;
+    margin: 0 1.5vh;
+}
+
+.footerImage2{
+    height: 4vh;
+    padding-right: 52px;
+}
