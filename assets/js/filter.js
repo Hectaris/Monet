@@ -1,5 +1,5 @@
 (function () {
-	var vinvertbutton = null;
+	var invertbutton = null;
 
 	function myInvert() {
 		var photo = document.getElementById('photo');
@@ -131,13 +131,120 @@
 		photo.setAttribute('src', data);
 	}
 
+	function myAddLuminosity() {
+		var photo = document.getElementById('photo2');
+		var canvas = document.getElementById('mycanvas2');
+		var context = canvas.getContext('2d');
+
+		// Get the CanvasPixelArray from the given coordinates and dimensions.
+		x = 0;
+		y = 0;
+		width = canvas.width;
+		height = canvas.height;
+
+		var imgd = context.getImageData(x, y, width, height);
+		var pix = imgd.data;
+		//console.log(pix);
+
+		// Loop over each pixel and invert the color.
+		for (var i = 0, n = pix.length; i < n; i += 4) {
+			// Ajouter de la luminosité
+			pix[i] = pix[i] + 20;
+			pix[i + 1] = pix[i + 1] + 20;
+			pix[i + 2] = pix[i + 2] + 20;
+			// i+3 est alpha (the fourth element)
+		}
+		// Draw the ImageData at the given (x,y) coordinates.
+		context.putImageData(imgd, 0, 0);
+
+		var data = canvas.toDataURL('image/png');
+		photo.setAttribute('src', data);
+	}
+
+	function myRemoveLuminosity() {
+		var photo = document.getElementById('photo2');
+		var canvas = document.getElementById('mycanvas2');
+		var context = canvas.getContext('2d');
+
+		// Get the CanvasPixelArray from the given coordinates and dimensions.
+		x = 0;
+		y = 0;
+		width = canvas.width;
+		height = canvas.height;
+
+		var imgd = context.getImageData(x, y, width, height);
+		var pix = imgd.data;
+
+		// Loop over each pixel and invert the color.
+		for (var i = 0, n = pix.length; i < n; i += 4) {
+			// Diminuer la luminosité
+			pix[i] = pix[i] - 20;
+			pix[i + 1] = pix[i + 1] - 20;
+			pix[i + 2] = pix[i + 2] - 20;
+			// i+3 est alpha (the fourth element)
+		}
+		// Draw the ImageData at the given (x,y) coordinates.
+		context.putImageData(imgd, 0, 0);
+
+		var data = canvas.toDataURL('image/png');
+		photo.setAttribute('src', data);
+	}
+
+	function myBlack() {
+		var photo = document.getElementById('photo2');
+		var canvas = document.getElementById('mycanvas2');
+		var context = canvas.getContext('2d');
+
+		// Get the CanvasPixelArray from the given coordinates and dimensions.
+		x = 0;
+		y = 0;
+		width = canvas.width;
+		height = canvas.height;
+
+		var imgd = context.getImageData(x, y, width, height);
+		var pix = imgd.data;
+		//console.log(pix);
+
+		// Loop over each pixel and invert the color.
+		for (var i = 0, n = pix.length; i < n; i += 4) {
+			// Mettre en noir :  pix[i] <= 128 ? 0 : 255;
+			pix[i] = pix[i] <= 128 ? 0 : 255; // red
+			pix[i + 1] = pix[i + 1] <= 128 ? 0 : 255; // green
+			pix[i + 2] = pix[i + 2] <= 128 ? 0 : 255; // blue
+			// i+3 is alpha (the fourth element)
+		}
+
+		// Draw the ImageData at the given (x,y) coordinates.
+		context.putImageData(imgd, x, y);
+
+		var data = canvas.toDataURL('image/png');
+		photo.setAttribute('src', data);
+	}
 
 	function afterload() {
-		vinvertbutton = document.getElementById('idinvertbutton');
+		invertbutton = document.getElementById('idinvertbutton');
+		blackbutton = document.getElementById('blackbutton');
+		addluminositybutton = document.getElementById('addluminositybutton');
+		removeluminositybutton = document.getElementById('removeluminositybutton');
 
-		// ICI je fais le lien entre ma fonction myInert() et l'évenement click du bouton innvert
-		vinvertbutton.addEventListener('click', function (ev) { myInvert(); }, false);
+		invertbutton.addEventListener('click', function (ev) {
+			myInvert();
+		}, false);
+
+		blackbutton.addEventListener('click', function (ev) {
+			myBlack();
+		}, false);
+
+		addluminositybutton.addEventListener('click', function (ev) {
+			myAddLuminosity();
+		}, false);
+
+		removeluminositybutton.addEventListener('click', function (ev) {
+			myRemoveLuminosity();
+		}, false);
 
 	}
+
 	window.addEventListener('load', afterload, false);
+
 })();

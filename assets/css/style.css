@@ -1,9 +1,9 @@
 
 /*Mise en place du dégradé de fond*/
 .background {
-    background: linear-gradient(180deg, #F8F8F8 24.27%, rgba(224, 239, 243, 1) 37.87%, rgba(157, 192, 203, 1) 55.59%, rgba(252, 210, 159, 1) 70.39%, rgba(126, 103, 76, 1) 100%);
+    background: linear-gradient(180deg, #F8F8F8 28.27%, rgba(224, 239, 243, 1) 37.87%, rgba(157, 192, 203, 0.5) 55.59%, rgba(252, 210, 159, 0.5) 70.39%);
     animation: gradient 60s ease infinite;
-    background-size: 200% 200%;
+    background-size: 200% 100%;
     justify-content: center;
     transition: all 0.5s;
 }

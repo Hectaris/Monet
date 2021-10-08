@@ -23,6 +23,10 @@
     width: 40vh;
 }
 
+.column{
+    flex-direction: column;
+}
+
 .resultFiltreImg {
     padding-bottom: 5vh;
     width: 40vh;
@@ -78,7 +82,6 @@
     border-radius: 12px;
     padding: 20px;
     padding-bottom: 40px;
-    box-shadow: 0 5px 5px 0px hsla(10 6% 15% / .4);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -86,7 +89,7 @@
     overflow: hidden;
     background: hsl(0 0% 90%);
     box-sizing: border-box;
-    background-color: #B4D2E7;
+    background-color: transparent;
 }
 
 .ci {
